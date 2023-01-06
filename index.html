@@ -17,35 +17,100 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Lato:ital@0;1&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a062562745.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+
         <header class="container.fluid d-flex">
             <img src="barber-pole.png" height="120" width="120">
             <h1 class="container.fluid">Big Mouth Barber</h1>
         </header>
+
         <main class="container.fluid text-center">
+            <!--barber-pod refers to no.1 barber podcast logo-->
             <figure class="container d-flex justify-content-center">
-                <img src="barber-pod.png" width="300" height="300" class="img-fluid mt-3">
+                <img src="barber-pod.png" width="300" height="300" class="img-fluid mt-3" alt="The World's NO.1 Barbershop Podcast" title="The Worlds NO.1 Barbershop Podcast">
             </figure>
+
             <div class="container.fluid bg-white mb-2" id="title"><h2 class="container.fluid text-center d-flex justify-content-center">WELCOME TO</h2>
-            <img src="big-mouth-logo.jpg" class="img.fluid rounded" width="300" height="300"></div>
-            <p class="container d-flex justify-content-center text-center"> Here I will share 25 years and counting of my opinions stories and banter with you all.<br> I will share my thoughts on everything from hair products to every day life and personal experience I have had in my own life.</p>
+            
+            <!--big-mouth is lips logo-->
+            <img src="big-mouth-logo.jpg" class="img-fluid rounded" width="300" height="300"></div>
+
+            <!--intro-->
+            <p class="container d-flex justify-content-center text-center">1997 was the year my career started as a barber and I have never looked back since!!<br> Switching from the building trade to train as a barber I then went on to own three barbershops and now after twenty-five years of blood sweat and tears I would like to share my knowledge of cutting hair and the many stories from clients I met along the way so through the big mouth barber podcast join me for an authentic journey as I talk about everyday aspects of life as a barber from my now  home town of Totnes. Here I will share 25 years and counting of my opinions stories and banter with you all.<br> I will share my thoughts on everything from hair products to every day life and personal experience I have had in my own life.</p>
+            
+            <!--nearcut ad-->
             <aside class="container text-center"><img src="ad-1.png" class="img-fluid"></aside>
             
             <!--section controls library-->
             <section class="container d-flex row justify-content-center mt-2 ">
                 
-                <div class="container.fluid col"> Podcast Library<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-music-player" viewBox="0 0 16 16">
+                <div class="container.fluid col" id="library-title"> Podcast Library<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-music-player" viewBox="0 0 16 16">
                     <path d="M4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V3zm1 0v3h6V3H5zm3 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
                     <path d="M11 11a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-3 2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
                     <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H4z"/></svg>
                 </div>
-                    
+                <div class="container">   
+                <audio id="myAudio" ontimeupdate="onTimeUpdate()">
+                    <!-- <source src="audio.ogg" type="audio/ogg"> -->
+                    <source id="source-audio" src="" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                  </audio>
+                  
+                  <div class="player-ctn">
+                    <div class="infos-ctn">
+                      <div class="timer">00:00</div>
+                      <div class="title"></div>
+                      <div class="duration">00:00</div>
+                    </div>
+                    <div id="myProgress">
+                      <div id="myBar"></div>
+                    </div>
+                    <div class="btn-ctn">
+                       <div class="btn-action first-btn" onclick="previous()">
+                          <div id="btn-faws-back">
+                            <i class='fas fa-step-backward'></i>
+                          </div>
+                       </div>
+                       <div class="btn-action" onclick="rewind()">
+                          <div id="btn-faws-rewind">
+                            <i class='fas fa-backward'></i>
+                          </div>
+                       </div>
+                       <div class="btn-action" onclick="toggleAudio()">
+                          <div id="btn-faws-play-pause">
+                            <i class='fas fa-play' id="icon-play"></i>
+                            <i class='fas fa-pause' id="icon-pause" style="display: none"></i>
+                          </div>
+                       </div>
+                       <div class="btn-play" onclick="forward()">
+                          <div id="btn-faws-forward">
+                            <i class='fas fa-forward'></i>
+                          </div>
+                       </div>
+                       <div class="btn-action" onclick="next()">
+                          <div id="btn-faws-next">
+                            <i class='fas fa-step-forward'></i>
+                          </div>
+                       </div>
+                       <div class="btn-mute" id="toggleMute" onclick="toggleMute()">
+                          <div id="btn-faws-volume">
+                            <i id="icon-vol-up" class='fas fa-volume-up'></i>
+                            <i id="icon-vol-mute" class='fas fa-volume-mute' style="display: none"></i>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="playlist-ctn"></div>
+                  </div>
+                </div> 
+                
+                <!--
                         
                         <audio class="container m-1" controls title="(First)7th November 2022" att="first">
                         
@@ -82,10 +147,11 @@
                         <audio class="container m-1" controls title="(climate)5th December 2022" att="climate podcast">
                             <source src="podcast-8.mp3" type="audio/mpeg">
                         </audio>
-                    
+                    -->
                 
             </section>
-            
+
+
             <div class="container d-flex justify-content-center">
             <form action="https://formspree.io/f/maykzewb"
             method="POST" class="container d-flex row justify-content-center">
@@ -102,6 +168,7 @@
             </form>
            </div>
         </main>
+
         <footer class="container d-flex justify-content-around col">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
                 <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
@@ -122,6 +189,8 @@
                 <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
               </svg>
         </footer>
-        <script src="" async defer></script>
+
+        <script src="app.js" async defer></script>
+
     </body>
 </html>
