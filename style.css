@@ -1,0 +1,373 @@
+/*
+font-family: 'Anton', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+*/
+@media (max-width: 576px) {
+    #logo{
+        height: 6vh !important;
+        width: 10vw !important;
+    }
+    #heading{
+        font-size: 4vw ;
+        left: 12vw !important;
+    }
+    #facts{
+      font-size: 2vw;
+      
+    }
+    #beans{
+      padding-bottom: 0%;
+    }
+    #mart1{
+      width: 60vw;
+      height: 70vw;
+    }
+    #circle{
+      width: 30vw !important;
+      height: 15vh !important;
+      margin-left: 25vw;
+    }
+    #talk-shop{
+      font-size: 8vw !important;
+    }
+    #pod-logo{
+      width: 25vw !important;
+      height: 20vh !important;
+      border-color: white;
+      border-style: solid;
+      border-radius: 8px;
+    }
+    #pod-title{
+      color: #d44178;
+    }
+    #ep-blocks{
+      text-align: center;
+      border-style: solid;
+      border-color: white;
+      border-radius: 8px;
+      margin-top: 1vh;
+    }
+    #ad1{
+      width: 90vw !important;
+      height: 25vh !important;
+      
+    }
+    #sponsor-pics{
+      text-align: right;
+    }
+    #background-change{
+      background-color: #0a0edf;
+      background-image: none !important;
+     
+    }
+    #staff-picture{
+      width: 60vw !important;
+      height: 30vh !important;
+    }
+    #bottom-logo{
+      height: 3vh !important;
+      width: 6vw !important;
+    }
+    h4{
+      font-size: 3vw;
+      margin-top: 0 !important;
+    }
+    article{
+      margin-top: 30vw !important;
+    }
+    h5{
+      font-size: 10vw !important;
+    }
+    #bottom-section{
+      height: 50vh !important;
+    }
+
+}
+body{
+    width: 100vw;
+    background-color: #0a0edf;
+}
+
+/*Lips logo top*/
+#logo{
+    width: 5vw;
+    height: 10vh;
+    position: absolute;
+    z-index: 2;
+    top: 1vw;
+    left:1vw;
+}
+
+/*Controls h1*/
+#heading{
+    position: absolute;
+    z-index: 2;
+    top:2vw;
+    left:7vw;
+    background-color: aliceblue;
+    padding: 0.25vw;
+}
+header {
+    width: 100vw;
+    column-count: 2;
+    column-gap: 20vw;
+    column-rule: 1vw;
+    background-color: #0a0edf;
+    position: relative;
+  }
+  /*Controls picture of martin at top*/
+  #mart1{
+    width: 50vw;
+    
+
+  }/*Controls (martin spills the beans)*/  
+  #beans{
+    text-align: right;
+    font-size: 4vw;
+    font-family: 'Anton', sans-serif;
+    padding-right: 1vw;
+    padding-bottom: 2vw;
+  }
+  #talk{
+    font-size: 2vw;
+    
+  }
+  #intro{
+    font-size: 2vw;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  /*Controls know the facts button*/
+  #facts{
+    background-color: black;
+    color: white;
+    padding: 0.25vw;
+    border-radius: 8px;
+  }
+  
+  section{
+    background-color: #0a0edf;
+   
+  }
+  #line-break{
+    background-color: black;
+    margin: 0;
+    padding: 0.25vh;
+  }
+
+  #circle{
+    width: 5vw;
+    height: 10vh;
+    background-color: #d44178;
+    margin-top: 10vh;
+    border-radius: 50%;
+    
+  }
+
+  #talk-shop{
+    font-family: 'anton', sans-serif;
+    font-size: 3vw;
+    color: #d44178;
+  }
+
+  #introduction{
+    color: white;
+  }
+  h2{
+    background-color: #0a0edf;
+    color: #d44178;
+    font-family: 'anton', sans-serif;
+    font-size: 9vw;
+    padding-left: 2vw;
+    padding-top: 5vh;
+  }
+  #pod-logo{
+    width: 15vw;
+    height: 30vh;
+  }
+  main{
+    background-color: #0a0edf;
+   
+    border-top: none;
+    padding-bottom: 10vw;
+  }
+  #pod-number{
+    font-family: 'oswald', sans-serif;
+    color: white;
+  }
+  #pod-title{
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 0.1vw;
+  }
+
+  #ad1{
+    width: 30vw;
+    height: 30vh;
+    margin-top: 2vh;
+  }
+
+  #sponsors-title, h3{
+    font-family: 'Anton', sans-serif;
+    font-size: 9vw;
+    padding-left: 2vw;
+    color: #d44178;
+    padding-bottom: 2vw;
+  }
+  #sponsor-pics{
+    text-align: right;
+    padding-top: 10vh;
+  }
+  #background-change{
+    background-image: url(/images/barber-shop.jpg);
+    background-repeat: none;
+    background-size: cover;
+    opacity: 80%;
+  }
+  #link-to-download{
+    text-align: center;
+    margin-bottom: 10vw;
+    font-size: 8vw;
+    background-color: black;
+    color: #d44178;
+    font-family: 'Anton', sans-serif;
+  }
+
+  #sponsors-section{
+    padding-bottom: 10vw;
+  }
+  #staff-picture{
+    width: 15vw;
+    height: 30vh;
+    border-radius: 50%;
+    -webkit-box-shadow: 24px -20px 14px -1px #d44178; 
+    box-shadow: 24px -20px 14px -1px #d44178;
+    
+  }
+  #staff-section{
+    text-align: center;
+    padding-top: 10vh;
+    margin-bottom: 5vw;
+  }
+
+  #staff-name{
+    font-family: 'Anton', sans-serif;
+    color: white;
+    font-size: 4vw;
+  }
+  #staff-title{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 3vw;
+    color: #d44178;
+  }
+  
+  #social-links{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    text-align: center;
+  }
+
+  #link{
+    padding: 1vh;
+    color: white;
+    
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3vw;
+    background-color: black;
+    margin: 2vw;
+    border-radius: 8px;
+    border-color: rgb(109, 109, 109);
+    border-style: solid;
+  }
+  #episode-link{
+    text-decoration: none;
+  }
+  #bottom-logo{
+    width: 7vw;
+    height: 15vh;
+  }
+  #bottom-section{
+    background-image: url(/images/scissors-comb.jpg);
+    width: 100vw;
+    height: 40vh;
+    background-repeat: none;
+    background-size:cover;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  footer{
+    position: absolute;
+    z-index: 2;
+    margin-top: 1vh;
+  }
+  h4{
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 1vw;
+    font-weight: 600;
+    margin-top: 2vh;
+  }
+  article{
+    text-align: center;
+    margin-top: 10vw;
+  }
+  h5{
+    font-family: 'Anton', sans-serif;
+    font-size: 5vw;
+    color: #d44178;
+    background-color: black;
+    margin: 1vw;
+    border-radius: 8px;
+    border-color:  rgb(109, 109, 109); 
+    border-style: solid;
+  }
+  #icon{
+   color: #d44178;
+    width: 10vw;
+    background-color: black;
+    margin: 0.2vh;
+    border-radius: 8px;
+    padding: 0.2vh;
+    border-color:  rgb(109, 109, 109); 
+    border-style: solid;
+
+  }
+  #form{
+    background-color: rgb(43, 42, 42);
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    color: #d44178;
+  }
+  #first,#last,#email{
+    border-radius: 8px;
+    
+  }
+  #contact-title{
+    font-family: 'Anton', sans-serif;
+    color: #d44178;
+  }
+  #apm-section{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 1vh;
+    text-decoration: none;
+  }
+  #apm-link{
+    text-decoration: none;
+  }
+  a{
+    text-decoration: none;
+  }
+  /*
+font-family: 'Anton', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+*/
