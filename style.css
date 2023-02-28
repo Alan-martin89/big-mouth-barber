@@ -371,3 +371,56 @@ font-family: 'Anton', sans-serif;
 font-family: 'Open Sans', sans-serif;
 font-family: 'Oswald', sans-serif;
 */
+a:hover{
+  text-decoration: none;
+}
+
+.eptitle {
+  font-family: 'Anton', sans-serif;
+  background-color: black;
+  color: #d44178;
+  font-size: 5vw;
+}
+
+.epintro{
+  color: white;
+  font-size: 1rem;
+  align-content: baseline;
+}
+#grid{
+  border-color: white;
+  border-style: solid;
+}
+#epgrid{
+  
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."; 
+}
+.img{
+  border-style: none;
+  border-color: #3e3e3f;
+  margin-left: 1vh;
+}
+/*
+font-family: 'Anton', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+*/
+.marg{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
